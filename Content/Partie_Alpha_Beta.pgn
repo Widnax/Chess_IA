@@ -1,0 +1,15 @@
+[Event "Créer votre partie"]
+[Site "Lucas Chess R 2.00c"]
+[Date "2024.04.23"]
+[Result "1-0"]
+[ECO "B02"]
+[Termination "Inconnu"]
+[Opening "Alekhine Defence: Mokele Mbembe (Buecker) Variation"]
+[PlyCount "77"]
+
+1.e4 Nf6 2.e5 Ne4 3.d3 Nc5 4.d4 Ne6 5.Bc4 Nc6 6.Nf3 Nexd4 7.Nxd4 Nxe5 8.Bb3 c5 
+9.Nf3 Qa5+ 10.Bd2 Nxf3+ 11.Qxf3 Qc7 12.Qxf7+ Kd8 13.O-O c4 14.Ba4 Qc5 15.Nc3 Qd4
+16.Rad1 g5 17.Bxg5 Qg4 18.Be3 Rg8 19.g3 b5 20.Bxb5 Rb8 21.Rd4 Qg6 22.Qxc4 e5 
+23.Rd3 Rxb5 24.Qxb5 Bb4 25.Qxb4 Ke8 26.Nd5 Rg7 27.Bc5 Qc6 28.Re1 Rg5 29.Bf8 d6 
+30.Bxd6 Rf5 31.Rxe5+ Rxe5 32.Bxe5 Qe6 33.Nc7+ Kf7 34.Nxe6 Bxe6 35.Qb7+ Ke8 
+36.Bf6 Bd7 37.Qxd7+ Kf8 38.Qe7+ Kg8 39.Qg7#
