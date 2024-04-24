@@ -1,5 +1,4 @@
 import chess
-import chess.svg
 
 # Définition de la table de valorisation des pièces
 pieceSquareTable = [
