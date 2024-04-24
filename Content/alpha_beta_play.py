@@ -109,9 +109,8 @@ def getNextMove(depth, board, maximize):
                 bestMove = move
     return (bestMove, bestValue)
 
-def play_chess():
+def play_chess(depth=3):
     board = chess.Board()  # Initialisation du tableau d'échecs
-    depth = 3  # Profondeur de recherche alpha-beta
     player_color = input("Choisissez la couleur des pièces que vous voulez jouer (B/N) : ").upper()
 
     while not board.is_game_over():
@@ -122,18 +121,24 @@ def play_chess():
 
         if player_color == "B" and board.turn == chess.WHITE:
             # Au tour du joueur de jouer
-            move = input("Votre coup (notation algebrique): ")
-            if chess.Move.from_uci(move) in board.legal_moves:
-                board.push_uci(move)
-            else:
+            try:
+                move = input("Votre coup (notation algebrique): ")
+                if chess.Move.from_uci(move) in board.legal_moves:
+                    board.push_uci(move)
+                else:
+                    print("Coup invalide, veuillez rejouer.")
+            except:
                 print("Coup invalide, veuillez rejouer.")
 
         elif player_color == "N" and board.turn == chess.BLACK:
             # Au tour du joueur de jouer
             move = input("Votre coup (notation algebrique): ")
-            if chess.Move.from_uci(move) in board.legal_moves:
-                board.push_uci(move)
-            else:
+            try:
+                if chess.Move.from_uci(move) in board.legal_moves:
+                    board.push_uci(move)
+                else:
+                    print("Coup invalide, veuillez rejouer.")
+            except:
                 print("Coup invalide, veuillez rejouer.")
 
         else:
@@ -143,5 +148,7 @@ def play_chess():
             print("Coup de l'ordinateur : ", best_move)
 
         print("\n")  # Affichage d'une ligne vide pour la clarté
+    print("Fin de la partie")
+    print("Le gagnant est : ", board.result())
 
 play_chess()
